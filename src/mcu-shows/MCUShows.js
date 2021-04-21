@@ -4,7 +4,7 @@ import './MCUShows.css';
 
 
 // 1b & 5b
-const MCUShows = ({dates}) => {
+const MCUShows = ({dates, randomAvenger, nextAvenger}) => {
     // 1c
     return (
         // 4a
@@ -16,6 +16,10 @@ const MCUShows = ({dates}) => {
             <p>The Falcon and the Winter Soldier: {dates.falconWinter} </p>
             <p>Loki: {dates.loki} </p>
             <p>Hawkeye: {dates.hawkeye} </p>
+            {/* 6e */}
+            <button onClick={randomAvenger}>RANDOM AVENGER</button>
+            {/* 7c & 7d */}
+            <button onClick={nextAvenger}>NEXT AVENGER</button>
         </div>
     );
 }
